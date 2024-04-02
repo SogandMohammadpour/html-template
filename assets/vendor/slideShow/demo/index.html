@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tiny SEO-Friendly Carousel jQuery Plugin Examples</title>
+  <style type="text/css">
+    body {
+      font-family: 'Inter', Helvetica, Arial, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fafafa;
+    }
+
+    .container {
+      font-size: 14px;
+      width: 840px;
+      margin: 150px auto;
+    }
+
+    .slideshow {
+      width: 800px;
+      overflow: hidden;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 3px solid #999;
+
+    }
+
+    .slides {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .slide {
+      float: left;
+      width: 360px;
+      height: 150px;
+      padding: 20px;
+    }
+
+    .slideshow .prev,
+    .slideshow .next {
+      appearance: none;
+      margin: 2px 0;
+      padding: 4px 8px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #dee0e8;
+      border-radius: 3px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="slideshow">
+      <h2>Example using "Previous"/"Next" navigation:</h2>
+      <ul class="slides">
+        <li class="slide">
+          <div class="img-wrapper">
+            1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="img-wrapper">
+            2 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+
+            <a href="#" class="description"><span>Green Roof</span></a>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="img-wrapper">
+            3 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+            <span class="description"><span>Zeeland</span></span>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="img-wrapper">
+            4 In culpa qui officia deserunt mollit anim id est laborum.
+            <span class="description"><span>CityFlats Hotel</span></span>
+          </div>
+        </li>
+
+        <li class="slide">
+          <div class="img-wrapper">
+            5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="prev">&lt;</button>
+      <button type="button" class="next">&gt;</button>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../src/jquery.jcarousellite.js"></script>
+  <script>
+      $('.slideshow').jCarouselLite({
+        auto: true,
+        visible: 2,
+        speed: 300,
+        pause: true,
+        mouseWheel: true,
+        btnPrev: function () {
+          return $(this).find('.prev');
+        },
+        btnNext: function () {
+          return $(this).find('.next');
+        },
+      });
+
+      $('.pause').on('click', function () {
+        $('.slideshow').trigger('pauseCarousel');
+      });
+      $('.resume').on('click', function () {
+        $('.slideshow').trigger('resumeCarousel');
+      });
+
+  </script>
+
+</body>
+
+</html>

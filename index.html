@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="assets/img/lion-pic/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <style>
+        .top1 {
+            width: 100%;
+        }
+
+        .top1 .topbar {
+            max-width: 1360px;
+            /* height: 80px; */
+            /* background-color: gray; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top1 .topbar .a1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .top1 .topbar .a1 .logo {
+            width: 100%;
+            /* background-color: lightgray; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .top1 .topbar .a1 .searchBox {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(249, 249, 249);
+            width: 100%;
+            height: 30px;
+            border-radius: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top1 .topbar .a1 .searchBox input {
+            border: none;
+            background-color: transparent;
+        }
+
+        .top1 .topbar .a2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top1 .topbar .a2 .icon {
+            /* width: 100%; */
+            /* height: 40px; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+        .top1 .topbar .a2 .media-900-1{
+            display: none;
+        }
+        .top1 .topbar .a1 .media-900-1{
+            display: none;
+        }
+        .nav1 {
+            width: 100%;
+        }
+
+        .nav1 nav {
+            max-width: 1360px;
+            /* height: 60px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            /* background-color: lightgray; */
+            gap: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav .b1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 50px;
+            font-size: 24px;
+        }
+
+        .nav1 nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav1 nav ul li a {
+            text-decoration: none;
+        }
+
+        .nav1 nav .b3 {
+            display: flex;
+            gap: 30px;
+            font-size: 20px;
+        }
+
+        .d1 {
+            width: 100%;
+            margin-top: 0;
+            background-color: rgb(249, 249, 249);
+        }
+
+        .d1 .d2 {
+            max-width: 1360px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-top: 40px; */
+        }
+
+        .d1 .d2 .d3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 30%;
+        }
+
+        .d1 .d2 .d4 {
+            width: 70%;
+        }
+
+        .d1 .d2 .d3 img {
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .d1 .d2 .d4 img {
+            border-radius: 20px;
+            width: 100%;
+            height: 552px;
+            /* object-fit: contain; */
+        }
+
+        /* .d4 {
+            width: 100%;
+        } */
+        .e1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(237, 251, 252);
+            margin-top: 0;
+        }
+
+        .e1 .e0 {
+            max-width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .e1 .e0 .e2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1030px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .e1 .e0 .e2 div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .e1 .e0 .posts {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 18px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .e1 .e0 .posts .post {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: flex-end;
+            background-color: white;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+            border-radius: 10px;
+
+        }
+
+        .e1 .e0 .posts .post img {
+            margin-bottom: 10px
+        }
+
+        .e1 .e0 .posts .post .e3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            color: rgb(23, 139, 127);
+            margin-bottom: 10px;
+        }
+
+        .e1 .e0 .posts .post .e3 span {
+            /* text-align: start; */
+            text-decoration: line-through;
+            color: rgb(187, 187, 187);
+        }
+
+        .e1 .e0 .posts .post .e4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 120px;
+            margin-bottom: 10px;
+        }
+
+        .e1 .e0 .posts .post .e4 div {
+            display: flex;
+            gap: 20px;
+        }
+
+        .e1 .e0 .posts .post hr {
+            width: 100%;
+            height: 2px;
+            /* background-color: rgb(243, 243, 243); */
+        }
+
+        .e1 .e0 .posts .post .e5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .e1 .e0 .posts .post .e5 div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(187, 187, 187);
+
+        }
+
+        .e1 .e0 .posts .post .e5 h5 {
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            color: rgb(51, 51, 51);
+        }
+
+        .f1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(251, 251, 251);
+            margin-top: 0;
+        }
+
+        .f1 .f0 {
+            width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .f1 .f0 .f2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1060px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .f1 .f0 .f2 div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .f1 .f0 .cases {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 18px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .f1 .f0 .cases .case {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: flex-end;
+            background-color: white;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+            border-radius: 10px;
+
+        }
+
+        .f1 .f0 .cases .case img {
+            margin-bottom: 10px
+        }
+
+        .f1 .f0 .cases .case .f3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            /* text-align: left; */
+            color: rgb(23, 139, 127);
+            margin-bottom: 10px;
+        }
+
+        .f1 .f0 .cases .case .f4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 120px;
+            margin-bottom: 10px;
+        }
+
+        .f1 .f0 .cases .case .f4 div {
+            display: flex;
+            gap: 20px;
+        }
+
+        .g1 {
+            background-color: rgb(251, 251, 251);
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .g1 div {
+            max-width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .g1 img {
+            border-radius: 10px;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        .h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(251, 251, 251); */
+            background-color: rgb(251, 251, 251);
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .h1 div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            max-width: 1360px;
+            gap: 145px;
+            margin-bottom: 50px;
+            margin-top: 0;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .h1 div img {
+            width: 100%;
+        }
+
+        .i1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(237, 251, 252);
+            margin-top: 0;
+        }
+
+        .i1 .i0 {
+            max-width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .i1 .i0 .i2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1010px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .i1 .i0 .i2 div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .i1 .i0 .mahsolat {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 18px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .i1 .i0 .mahsolat .mahsol {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding-top: 0;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+            border-radius: 10px;
+
+        }
+
+        .i1 .i0 .mahsolat .mahsol img {
+            margin-left: 10px;
+        }
+
+        .i1 .i0 .mahsolat .mahsol .i3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(23, 139, 127);
+
+        }
+
+        .i1 .i0 .mahsolat .mahsol .i3 span {
+            text-decoration: line-through;
+            color: rgb(187, 187, 187);
+        }
+
+        .i1 .i0 .mahsolat .mahsol .i3 h5 {
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 8px;
+            margin-left: 0;
+            color: rgb(51, 51, 51);
+        }
+
+        .j1 {
+            width: 100%;
+            background-color: rgb(251, 251, 251);
+        }
+
+        .j1 .j2 {
+            max-width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: right; */
+            align-items: start;
+            margin-top: 50px;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .j1 .j2 .j3 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .j1 .j2 .tecs {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .j1 .j2 .tecs .tec {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        .j1 .j2 .tecs .tec img {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .j1 .j2 .tecs .tec input {
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(51, 51, 51);
+            color: white;
+            margin-right: 18px;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .j1 .j2 .tecs .tec h4 {
+            margin-right: 18px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .j1 .j2 .tecs .tec span {
+            margin-right: 18px;
+            /* color:rgb(211,211,211) ; */
+            color: rgb(119, 119, 119);
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .k1 {
+            width: 100%;
+            background-color: rgb(251, 251, 251);
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .k1 .fasele {
+            width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(251, 251, 251);
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            margin-bottom: 100px;
+        }
+
+        .k1 .fasele .k2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+            width: 436px;
+        }
+
+        .k1 .fasele .k2 .k3 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 200px;
+            width: 100%;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .k1 .fasele .k2 .background {
+            width: 100%;
+            background-image: url(assets/img/lion-pic/1-goshi.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: start;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .k1 .fasele .k2 .background .back1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 200px;
+            margin-bottom: 70px;
+            margin-top: 15px;
+        }
+
+        .k1 .fasele .k2 .background .back1 .back2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .k1 .fasele .k2 .background input {
+            background-color: rgb(131, 124, 124);
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            margin-right: 30px;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .k1 .fasele .k2 .background h4 {
+            color: white;
+            margin-right: 30px;
+            font-size: 20px;
+        }
+
+        .k1 .fasele .k2 .background .span {
+            color: rgb(131, 124, 124);
+            font-size: 18px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+        }
+
+        .maqalat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 436px;
+        }
+
+        .k1 .fasele .maqalat .k4 {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: flex-start;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .k1 .fasele .maqalat .lil-post {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .k1 .fasele .maqalat .lil-post img {
+            border-radius: 5px;
+        }
+
+        .k1 .fasele .maqalat .lil-post .k5 {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+
+        }
+
+        .k1 .fasele .maqalat .lil-post h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .k1 .fasele .maqalat .lil-post .k5 .k6 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: rgb(131, 124, 124);
+        }
+
+        .k1 .fasele .nazarat {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .k1 .fasele .nazarat .k7 {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: flex-start;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .k1 .fasele .nazarat .nazar {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: flex-start;
+        }
+
+        .k1 .fasele .nazarat .nazar img {
+            border-radius: 10px;
+        }
+
+        .k1 .fasele .nazarat .nazar h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .k1 .fasele .nazarat .nazar i {
+            color: rgb(234, 190, 18);
+            margin-bottom: 10px;
+        }
+
+        .k1 .fasele .nazarat .nazar span {
+            color: rgb(131, 124, 124);
+        }
+
+        /* .l0 {
+            width: 100%;
+            background-color: rgb(251, 251, 251);
+            padding: 50px;
+        } */
+
+        .l0 .l1 {
+            max-width: 1360px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: start;
+            gap: 50px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            /* padding: 50px; */
+        }
+
+        .l0 .l1 div h5 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+
+        }
+
+        .l0 .l1 .l2 input {
+            border: none;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        .l0 .l1 .l2 input:focus {
+            border: none;
+            outline: none;
+        }
+
+        .l0 .l1 .l2 {
+            width: 50%;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .l0 .l1 .l2 input[type=button] {
+            width: 64px;
+            height: 50px;
+            background-color: rgb(23, 139, 127);
+            position: relative;
+            border-radius: 5px 0 0 5px;
+            /* right: -4px; */
+            color: white;
+        }
+
+        .l0 .l1 .l2 input[type=text] {
+            /* background-color: rebeccapurple; */
+            width: calc(100% - 74px);
+            height: 48px;
+            border-radius: 0 5px 5px 0;
+            color: gray;
+            font-size: 18px;
+            padding-right: 10px;
+        }
+
+        .l0 .l1 .l3 {
+            width: 1px;
+            height: 72px;
+            background-color: gray;
+        }
+
+        .l0 .l1 .l4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .l0 svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .foot0 {
+            width: 100%;
+            background-color: rgb(251, 251, 251);
+            margin-top: 50px;
+        }
+
+        .foot0 .foot1 {
+            max-width: 1360px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+            /* margin-top: 50px; */
+            gap: 150px;
+        }
+
+        .foot0 .foot1 .foot2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            text-align: start;
+            width: 33%;
+            gap: 10px;
+        }
+
+        .foot0 .foot1 .foot3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            text-align: start;
+            width: 33%;
+            gap: 10px;
+        }
+
+        .foot0 .foot1 .foot4 {
+            width: 33%;
+
+        }
+
+        .foot0 .foot1 svg {
+            width: 15px;
+            height: 15px;
+            color: rgb(23, 139, 127);
+        }
+
+        .foot0 .foot1 .foot5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: start;
+            gap: 10px;
+
+        }
+
+        .foot0 .foot1 h5 {
+            margin: 0;
+            color: rgb(51, 51, 51);
+        }
+
+        .foot0 .foot1 span {
+            color: rgb(131, 124, 124);
+        }
+
+        .foot0 .foot1 .foot6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: start;
+            gap: 80px;
+        }
+        @media screen and (max-width : 992px) {
+            .top1 .topbar .a1 .searchBox{
+                display: none;
+            }
+            .top1 .topbar .a2 .icon{
+                display: none;
+            }
+            .top1 .topbar .a2 .tamas{
+                display: none;
+            }
+            .top1 .topbar .a1 .logo{
+                justify-content: center;
+                align-items: center;
+            }
+            .top1 .topbar .a2 .media-900-1{
+                display: block;
+            }
+            .top1 .topbar .a1 .media-900-1{
+                display: block;
+            }
+            .top1{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="topbar">
+            <div class="a1">
+               <div class="media-900-1" >
+                    <i class='bx bx-menu bx-sm'></i>
+                    
+                </div>
+                <div class="logo">
+                    <img src="assets/img/lion-pic/1641798048-v86QVTiiqSZZd0o0-300x50.png" height="30px">
+                </div>
+                <div class="searchBox">
+                    <input type="text" placeholder="جستجوی محصولات">
+                    <i class='bx bx-search'></i>
+                </div>
+            </div>
+            <div class="a2" dir="ltr">
+                <div class="icon">
+                    <i class='bx bx-user bx-sm'></i>
+                    <i class='bx bx-cart bx-sm'></i>
+                    <i class='bx bx-heart bx-sm'></i>
+                    <i class='bx bx-git-compare bx-sm'></i>
+                </div>
+                 <div class="media-900-1">
+                <i class='bx bx-cart bx-sm'></i>
+               </div>
+                
+                <div class="tamas">
+                    با ما تماس بگیرید
+                    <br>
+                    021-88008801
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav1">
+        <nav>
+            <div class="b1">
+                <ul>
+                    <li>
+                        <a href="#">دسته بندی ها</a>
+                    </li>
+                </ul>
+
+                <div class="b2">
+                    <ul>
+                        <li>
+                            <a href="#">فروشگاه</a>
+                        </li>
+                        <li>
+                            <a href="#">سبد خرید</a>
+                        </li>
+                        <li>
+                            <a href="#">مجله</a>
+                        </li>
+                        <li>
+                            <a href="#">مستندات آموزشی</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b3">
+                <span>فروش اقساطی</span>
+                <span>فروش ویژه</span>
+            </div>
+        </nav>
+    </div>
+    <section class="d1">
+        <div class="d2">
+            <div class="d4">
+                <img src="assets/img/lion-pic/vaqti-keyfiat.webp">
+
+            </div>
+            <div class="d3">
+                <img src="assets/img/lion-pic/mese-ab.webp">
+                <img src="assets/img/lion-pic/forosh-aqsati.webp">
+            </div>
+        </div>
+    </section>
+    <section class="e1">
+        <div class="e0">
+            <div class="e2">
+                <div>
+                    <i class='bx bx-radio-circle-marked'></i>
+                    <span>فروش ویژه هفته</span>
+                </div>
+                <div>
+                    <span>مشاهده همه</span>
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="post">
+                    <img src="assets/img/lion-pic/2-post.jpg" width="200" height="200">
+                    <h4>
+                        گوشی موبایل اپل مدل iPhone 12 Pro Max 512GB</h4>
+                    <div class="e3">
+                        <span>56,000,000 تومان</span>
+                        54,500,000 تومان
+                    </div>
+                    <div class="e4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="e5">
+                        <div class="time">
+                            <h5>114</h5>
+                            <span>روز</span>
+                        </div>
+                        <div>
+                            <h5>04</h5>
+                            <span>ساعت</span>
+                        </div>
+                        <div>
+                            <h5>56</h5>
+                            <span>دقیقه</span>
+                        </div>
+                        <div>
+                            <h5>10</h5>
+                            <span>ثانیه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/img/lion-pic/3-post.jpg" width="200" height="200">
+                    <h4>گوشی اپل مدل Apple iPhone 13 128GB
+                    </h4>
+                    <div class="e3">
+                        <span>56,000,000 تومان</span>
+                        39,000,000 تومان
+                    </div>
+                    <div class="e4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="e5">
+                        <div class="time">
+                            <h5>78</h5>
+                            <span>روز</span>
+                        </div>
+                        <div>
+                            <h5>04</h5>
+                            <span>ساعت</span>
+                        </div>
+                        <div>
+                            <h5>50</h5>
+                            <span>دقیقه</span>
+                        </div>
+                        <div>
+                            <h5>33</h5>
+                            <span>ثانیه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/img/lion-pic/4-post.jpg" width="200" height="200">
+                    <h4>کارت گرافیک ASUS مدل TUF GAMING Radeon RX 6800
+                    </h4>
+                    <div class="e3">
+                        <span>10,600,000 تومان</span>
+                        9,000,000 تومان
+                    </div>
+                    <div class="e4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="e5">
+                        <div class="time">
+                            <h5>15</h5>
+                            <span>روز</span>
+                        </div>
+                        <div>
+                            <h5>04</h5>
+                            <span>ساعت</span>
+                        </div>
+                        <div>
+                            <h5>55</h5>
+                            <span>دقیقه</span>
+                        </div>
+                        <div>
+                            <h5>38</h5>
+                            <span>ثانیه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/img/lion-pic/5-post.jpg" width="200" height="200">
+                    <h4>رم دسکتاپ دو کاناله 3200 مگاهرتز مدل RGB PRO ظرفیت 16 گیگابایت
+                    </h4>
+                    <div class="e3">
+                        <span>1,500,000 تومان</span>
+                        1,140,000 تومان
+                    </div>
+                    <div class="e4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="e5">
+                        <div>
+                            <h5>241</h5>
+                            <span>روز</span>
+                        </div>
+                        <div>
+                            <h5>08</h5>
+                            <span>ساعت</span>
+                        </div>
+                        <div>
+                            <h5>50</h5>
+                            <span>دقیقه</span>
+                        </div>
+                        <div>
+                            <h5>20</h5>
+                            <span>ثانیه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/img/lion-pic/1-post.jpg" width="200" height="200">
+                    <h4>مادربرد MSI مدل MPG Z390 GAMING PRO CARBON AC</h4>
+                    <div class="e3">
+                        <span>7,800,000 تومان</span>
+                        6,900,000 تومان
+                    </div>
+                    <div class="e4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="e5">
+                        <div class="time">
+                            <h5>241</h5>
+                            <span>روز</span>
+                        </div>
+                        <div>
+                            <h5>08</h5>
+                            <span>ساعت</span>
+                        </div>
+                        <div>
+                            <h5>50</h5>
+                            <span>دقیقه</span>
+                        </div>
+                        <div>
+                            <h5>20</h5>
+                            <span>ثانیه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="f1">
+        <div class="f0">
+            <div class="f2">
+                <div>
+                    <i class='bx bx-radio-circle-marked'></i>
+                    <span>کیس و پاور</span>
+                </div>
+                <div>
+                    <span>مشاهده همه</span>
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+            </div>
+            <div class="cases">
+                <div class="case">
+                    <img src="assets/img/lion-pic/5-post.jpg" width="200" height="181">
+                    <h4>کیس Cooler Master مدل MasterBox MB620 ARGB
+                    </h4>
+                    <div class="f3">
+                        <span>760,000 تومان</span>
+                    </div>
+                    <div class="f4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="assets/img/lion-pic/4-case.jpg" width="200" height="181">
+                    <h4>گوشی اپل مدل Apple iPhone 13 128GB
+                    </h4>
+                    <div class="f3">
+                        <span>1,290,000 تومان</span>
+                    </div>
+                    <div class="f4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case">
+                    <img src="assets/img/lion-pic/3-cace.jpg" width="200" height="200">
+                    <h4>کیس RAIDMAX مدل NEON RGB
+                    </h4>
+                    <div class="f3">
+                        <span>1,450,000 تومان</span>
+                    </div>
+                    <div class="f4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="assets/img/lion-pic/2-post.jpg" width="200" height="181">
+                    <h4>کیس MSI مدل MPG GUNGNIR 110M
+                    </h4>
+                    <div class="f3">
+                        <span>1,450,000 تومان</span>
+
+                    </div>
+                    <div class="f4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="case">
+                    <img src="assets/img/lion-pic/1-case.jpg" width="200" height="200">
+                    <h4>کیس MSI مدل MAG FORGE 100R
+                    </h4>
+                    <div class="f3">
+                        <span>1,450,000 تومان</span>
+
+                    </div>
+                    <div class="f4">
+                        <i class='bx bx-cart bx-sm'></i>
+                        <div>
+                            <i class='bx bx-heart bx-sm'></i>
+                            <i class='bx bx-git-compare bx-sm'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="g1">
+        <div>
+            <img src="assets/img/lion-pic/ba-qodrat.webp" height="250">
+        </div>
+    </section>
+    <section class="h1" dir="ltr">
+        <div>
+            <img src="assets/img/lion-pic/1-logo.png" height="50">
+            <img src="assets/img/lion-pic/2-logo.jpg" height="50">
+            <img src="assets/img/lion-pic/3-logo.png" height="60">
+            <img src="assets/img/lion-pic/4-logo.png" height="80">
+            <img src="assets/img/lion-pic/5-logo.png" height="50">
+            <img src="assets/img/lion-pic/6-logo.jpg" height="80">
+            <img src="assets/img/lion-pic/7-logo.jpg" height="50">
+        </div>
+    </section>
+    <section class="i1">
+        <div class="i0">
+            <div class="i2">
+                <div>
+                    <i class='bx bx-radio-circle-marked'></i>
+                    <span>محصولات پرفروش</span>
+                </div>
+                <div>
+                    <span>مشاهده همه</span>
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+            </div>
+            <div class="mahsolat">
+                <div class="mahsol">
+                    <img src="assets/img/lion-pic/1-mahsol.jpg" height="100">
+                    <div class="i3">
+                        <h5>گوشی موبایل اپل مدل iPhone 12 Pro Max 512GB</h5>
+                        <span>56,000,000 تومان</span>
+                        54,500,000 تومان
+                    </div>
+                </div>
+                <div class="mahsol">
+                    <img src="assets/img/lion-pic/2-mahsol.jpg" height="100">
+                    <div class="i3">
+                        <h5>گوشی اپل مدل Apple iPhone 13 128GB
+                        </h5>
+                        <span>56,000,000 تومان</span>
+                        39,000,000 تومان
+                    </div>
+                </div>
+                <div class="mahsol">
+                    <img src="assets/img/lion-pic/3-mahsol.jpg" height="100">
+                    <div class="i3">
+                        <h5>کارت گرافیک ASUS مدل TUF GAMING Radeon RX 6800 </h5>
+                        <span>10,600,000 تومان</span>
+                        9,000,000 تومان
+                    </div>
+                </div>
+                <div class="mahsol">
+                    <img src="assets/img/lion-pic/4-mahsol.jpeg" height="100">
+                    <div class="i3">
+                        <h5>گوشی موبایل Samsung Galaxy A02 3GB 64GB
+                        </h5>
+                        56,000,001 تومان
+                    </div>
+                </div>
+                <div class="mahsol">
+                    <img src="assets/img/lion-pic/5-mahsol.jpg" height="100">
+                    <div class="i3">
+                        <h5>کیس MSI مدل MAG FORGE 100R</h5>
+                        1,450,000 تومان
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="j1">
+        <div class="j2">
+            <div class="j3">
+                <i class='bx bx-radio-circle-marked'></i>
+                <span>اخبار دنبای تکنولوژی</span>
+            </div>
+            <div class="tecs">
+                <div class="tec">
+                    <img src="assets/img/lion-pic/1-tec.jpg" height="200">
+                    <br>
+                    <input type="submit" value="سبک زندگی">
+                    <h4>اوپو Find N آثاری از تاخوردگی ندارد</h4>
+                    <span>کسی را نمی‌توانید پیدا کنید که از هدیه گرفتن خوشحال نشود! هدیه گرفتن د...</span>
+                </div>
+                <div class="tec">
+                    <img src="assets/img/lion-pic/2-tec.jpg" height="200">
+                    <br>
+                    <input type="submit" value="سبک زندگی">
+                    <h4>بزرگترین گردهم آیی گیمر ها در مراسم
+                    </h4>
+                    <span>کسی را نمی‌توانید پیدا کنید که از هدیه گرفتن خوشحال نشود! هدیه گرفتن د...</span>
+                </div>
+                <div class="tec">
+                    <img src="assets/img/lion-pic/3-tec.jpg" height="200">
+                    <br>
+                    <input type="submit" value="سبک زندگی">
+                    <h4>جدید ترین پردازنده اینل معرفی شد. </h4>
+                    <span>
+                        یلدا به معنی زایش است و از گذشته بلندترین شب سال را شب چله می‌نامیدند....
+                    </span>
+                </div>
+                <div class="tec">
+                    <img src="assets/img/lion-pic/4-tec.jpg" height="200">
+                    <br>
+                    <input type="submit" value="مراقبت و سلامتی">
+                    <h4>مراسم معرفی کارت گرافیک جدید ایسوس </h4>
+                    <span> دوره پریود و یکی دو روز پیش از آن، زمانیست که پوست شما درگیر مشکلات مر...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="k1">
+        <div class="fasele">
+            <div class="k2">
+                <div class="k3">
+                    <div>
+                        <i class='bx bx-radio-circle-marked'></i>
+                        <span>جدیدترین ویدئوها</span>
+                    </div>
+                    <div>
+                        <i class='bx bx-right-arrow-alt'></i>
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </div>
+                </div>
+                <div class="background">
+                    <div class="back1">
+                        <div class="back2">
+                            <i class='bx bx-camera-movie bx-sm'></i>
+                            <span>مدیر</span>
+                        </div>
+                        <div class="back2">
+                            <i class='bx bx-share-alt bx-sm'></i>
+                            <i class='bx bx-message-rounded-dots bx-sm'></i>
+                        </div>
+                    </div>
+                    <input type="submit" value="تکنولوژی">
+                    <h4>مقایسه گلکسی اس 22 اولترا با ایفون 13 پرو مکس</h4>
+                    <span class="span">گوشی‌های سامسونگ با تنظیماتِ پیش‌فرضِ بسیار متنوع و زیادی روانه بازار...</span>
+                </div>
+            </div>
+            <div class="maqalat">
+                <div class="k4">
+                    <i class='bx bx-radio-circle-marked'></i>
+                    <span>جدیدترین مقالات</span>
+                </div>
+                <div class="lil-post">
+                    <img src="assets/img/lion-pic/1-lil.webp">
+                    <div class="k5">
+                        <h4>مقایسه گلکسی اس 22 اولترا با ایفون 13 پرو مکس</h4>
+                        <div class="k6">
+                            <i class='bx bx-calendar'></i>
+                            <span>فوریه 6, 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lil-post">
+                    <img src="assets/img/lion-pic/2-lil.jpg">
+                    <div class="k5">
+                        <h4>اوپو Find N آثاری از تاخوردگی ندارد
+                        </h4>
+                        <div class="k6">
+                            <i class='bx bx-calendar'></i>
+                            <span>ژانویه 25, 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lil-post">
+                    <img src="assets/img/lion-pic/3-lil.jpg">
+                    <div class="k5">
+                        <h4>بزرگترین گردهم آیی گیمر ها در مراسم
+                        </h4>
+                        <div class="k6">
+                            <i class='bx bx-calendar'></i>
+                            <span>ژانویه 28, 2020
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lil-post">
+                    <img src="assets/img/lion-pic/4-lil.jpg">
+                    <div class="k5">
+                        <h4>جدید ترین پردازنده اینل معرفی شد.
+                        </h4>
+                        <div class="k6">
+                            <i class='bx bx-calendar'></i>
+                            <span>ژانویه 28, 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lil-post">
+                    <img src="assets/img/lion-pic/5-lil.jpg">
+                    <div class="k5">
+                        <h4>مراسم معرفی کارت گرافیک جدید ایسوس
+                        </h4>
+                        <div class="k6">
+                            <i class='bx bx-calendar'></i>
+                            <span>ژانویه 28, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nazarat">
+                <div class="k7">
+                    <i class='bx bx-radio-circle-marked'></i>
+                    <span>آخرین نظرات کاربران</span>
+                </div>
+                <div>
+                    <div class="nazar">
+                        <img src="assets/img/lion-pic/1-nazar.jpg" width="80" height="80">
+                        <div class="k8">
+                            <h4>مادربرد ایسوس مدل ROG MAXIMUS XIII HERO
+                            </h4>
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <span>توسط مدیر</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nazar">
+                        <img src="assets/img/lion-pic/2-nazar.jpg" width="80" height="80">
+                        <div class="k8">
+                            <h4>کارت گرافیک ASUS مدل TUF GAMING Radeon RX 6800</h4>
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <span>توسط مدیر</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nazar">
+                        <img src="assets/img/lion-pic/3-nazar.jpg" width="80" height="80">
+                        <div class="k8">
+                            <h4>گوشی موبایل اپل مدل iPhone 12 Pro Max 512GB</h4>
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <span>توسط admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="l0">
+        <div class="l1">
+            <div>
+                <h5>
+                    عضویت در خبرنامه
+                </h5>
+            </div>
+            <div class="l2">
+                <input type="text" value="آدرس ایمیل خود را وارد کنید..."><!--
+  --><input type="button" value="عضویت">
+            </div>
+            <div class="l3">
+            </div>
+            <div class="l4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96px" height="96px">
+                    <path fill="#263238"
+                        d="M21.881 6.136l-4.315-.974c-3.52-.795-7.017 1.414-7.812 4.934l-.983 4.351C11.603 9.95 16.357 6.788 21.881 6.136zM6.136 26.119l-.974 4.315c-.795 3.52 1.414 7.017 4.934 7.812l4.351.983C9.95 36.396 6.788 31.643 6.136 26.119zM37.904 9.754l-4.351-.983c4.497 2.832 7.659 7.586 8.311 13.109l.974-4.315C43.633 14.047 41.424 10.549 37.904 9.754zM26.119 41.864l4.315.974c3.52.795 7.017-1.414 7.812-4.934l.983-4.351C36.397 38.05 31.643 41.212 26.119 41.864z">
+                    </path>
+                    <path fill="#e91e63"
+                        d="M24,8C15.163,8,8,15.163,8,24s7.163,16,16,16s16-7.163,16-16S32.837,8,24,8z M20,13 c2.209,0,4,1.791,4,4c0,2.209-1.791,4-4,4s-4-1.791-4-4C16,14.791,17.791,13,20,13z M17,32c-2.209,0-4-1.791-4-4 c0-2.209,1.791-4,4-4s4,1.791,4,4C21,30.209,19.209,32,17,32z M22,24c0-1.105,0.895-2,2-2s2,0.895,2,2c0,1.105-0.895,2-2,2 S22,25.105,22,24z M28,35c-2.209,0-4-1.791-4-4c0-2.209,1.791-4,4-4s4,1.791,4,4C32,33.209,30.209,35,28,35z M31,24 c-2.209,0-4-1.791-4-4c0-2.209,1.791-4,4-4s4,1.791,4,4C35,22.209,33.209,24,31,24z">
+                    </path>
+                </svg>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </section>
+    <footer class="foot0">
+        <div class="foot1">
+            <div class="foot6">
+                <div class="foot2">
+                    <div class="foot5">
+                        <i class='bx bx-radio-circle-marked'></i>
+                        <h5>آدرس فروشگاه</h5>
+                    </div>
+                    <span>دفتر مرکزی</span>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z" />
+                        </svg>
+                        <span>
+                            تهران، خیابان طالقانی، خیابان کاشانی، کوچه کاج، پلاک 55، ساختمان مرکزی متافایل (همراه با
+                            پارکینگ)</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                        </svg>
+                        <span>
+                            کد پستی: 1283653313
+                        </span>
+                    </div>
+                </div>
+                <div class="foot3">
+                    <div class="foot5">
+                        <i class='bx bx-radio-circle-marked'></i>
+                        <h5>شماره های تماس</h5>
+                    </div>
+                    <span>
+                        ( ساعات کاری از ۹:۳۰ صبح الی ۱۸ و پنجشنبه از ۹:۳۰ تا ۱۴ )
+                    </span>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z" />
+                        </svg>
+                        <span>
+                            021-880004344
+                        </span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z" />
+                        </svg>
+                        <span>
+                            093661151091
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="foot4">
+                <div class="foot5">
+                    <i class='bx bx-radio-circle-marked'></i>
+                    <h5>اعتماد شما سرمایه ماست</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Beefup - Just a jQuery accordion plugin</title>
+	<link rel="stylesheet" href="dist/css/docs/styles.css">
+	<link rel="stylesheet" href="dist/css/jquery.beefup.css">
+
+</head>
+
+<body>
+	<main>
+		<article class="beefup example">
+			<h4 class="beefup__head">
+				Item 1
+			</h4>
+
+			<div class="beefup__body">
+				<div class="mockup"></div>
+			</div>
+		</article>
+	</main>
+
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/jquery.beefup.min.js"></script>
+	<script>
+		$(function () {
+
+			// Default
+			$('.example').beefup();
+			
+		});
+	</script>
+</body>
+</html>
